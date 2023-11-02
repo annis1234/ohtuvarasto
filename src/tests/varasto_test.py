@@ -44,7 +44,6 @@ class TestVarasto(unittest.TestCase):
     def test_ottaminen_yli_saldon_tyhjentaa_varaston(self):
         self.varasto.lisaa_varastoon(8)
         self.varasto.ota_varastosta(10)
-        # 10 > 8, eli varasto tyhjenee
         self.assertAlmostEqual(self.varasto.saldo, 0)
 
     def test_ottaminen_yli_saldon_palauttaa_oikean_maaran(self):
