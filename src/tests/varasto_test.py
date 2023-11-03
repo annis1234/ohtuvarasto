@@ -70,5 +70,5 @@ class TestVarasto(unittest.TestCase):
         self.assertAlmostEqual(self.kolmasVarasto.saldo, 0)
 
     def test_merkkijonon_muotoilu(self):
-        self.assertAlmostEqual(self.varasto.__str__(), "saldo = 0, vielä tilaa 10")
+        self.assertEqual(self.varasto.__str__(), "saldo = 0, vielä tilaa 10")
 
